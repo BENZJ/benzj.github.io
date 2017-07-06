@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Tensorflow-入门"><span class="post-toc-number">1.</span> <span class="post-toc-text">Tensorflow 入门</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#tensor张量"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">tensor张量</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Tensorflow-入门"><span class="post-toc-number">1.</span> <span class="post-toc-text">Tensorflow 入门</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#tensor张量"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">tensor张量</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#会话"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">会话</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Session（）"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">Session（）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#InteractiveSession（）"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">InteractiveSession（）</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#两种方法的不同点"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">两种方法的不同点</span></a></li></ol></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -395,6 +395,14 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <h1 id="Tensorflow-入门"><a href="#Tensorflow-入门" class="headerlink" title="Tensorflow 入门"></a>Tensorflow 入门</h1><h2 id="tensor张量"><a href="#tensor张量" class="headerlink" title="tensor张量"></a>tensor张量</h2><p>张量主要有3个属性，分别为名字（name），维度（shape），和类型（type）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">In [1]: import tensorflow as tf</div><div class="line"></div><div class="line">In [2]: a = tf.constant([1.0,2.0,3,0],name = <span class="string">'a'</span>)</div><div class="line"></div><div class="line">In [3]: <span class="built_in">print</span> a</div><div class="line">Tensor(<span class="string">"a:0"</span>, shape=(4,), dtype=<span class="built_in">float</span>32)</div></pre></td></tr></table></figure></p>
+<h2 id="会话"><a href="#会话" class="headerlink" title="会话"></a>会话</h2><p>开启回话主要有两种方法，还不太清楚Session()和InteractiveSession()有什么区别</p>
+<h3 id="Session（）"><a href="#Session（）" class="headerlink" title="Session（）"></a>Session（）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#开启session后去要关闭才行</span></div><div class="line">sess = tf.Session()</div><div class="line"></div><div class="line">result.eval(session=sess)</div><div class="line"><span class="keyword">print</span> result</div><div class="line"></div><div class="line">sess.close()</div></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 也可以使用with方法</span></div><div class="line"><span class="keyword">with</span> tf.Session() <span class="keyword">as</span> sess:</div><div class="line">    print(sess.run(result))</div></pre></td></tr></table></figure>
+<h3 id="InteractiveSession（）"><a href="#InteractiveSession（）" class="headerlink" title="InteractiveSession（）"></a>InteractiveSession（）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">sess = tf.InteractiveSession ()</div><div class="line"><span class="keyword">print</span> (result.eval())</div><div class="line">sess.close()</div></pre></td></tr></table></figure>
+<h3 id="两种方法的不同点"><a href="#两种方法的不同点" class="headerlink" title="两种方法的不同点"></a>两种方法的不同点</h3><ul>
+<li>使用InteractiveSession一个主要的变化是：运行在没有指定会话对象的情况下运行变量。这是与Session（）最大的不同。</li>
+<li>Session（）使用with..as..后可以不使用close关闭对话，而调用InteractiveSession需要在最后调用close</li>
+</ul>
 
     
 
@@ -537,7 +545,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">4</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">4</span></a>
             </ul>
         </li>
         

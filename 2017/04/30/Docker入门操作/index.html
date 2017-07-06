@@ -32,7 +32,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Benz">
     <meta name="description" content="null">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,docker">
 
     <!-- Favicons -->
     <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -60,7 +60,7 @@
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Docker入门操作 | Benz&#39;s Blog">
     <meta property="og:description" content="null">
-    
+    <meta property="og:article:tag" content="docker"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -247,7 +247,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Docker容器的入门操作"><span class="post-toc-number">1.</span> <span class="post-toc-text">Docker容器的入门操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Docker的安装"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Docker的安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Windows安装"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">Windows安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Ubuntu-14-04安装"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">Ubuntu 14.04安装</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Docker基本命令"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Docker基本命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-pull拉取Docker镜像"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">docker pull拉取Docker镜像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-images查看镜像"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">docker images查看镜像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-run启动镜像并且创建容器"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">docker run启动镜像并且创建容器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-export打包导出容器"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">docker export打包导出容器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-import导入容器"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">docker import导入容器</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Docker常用方法"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Docker常用方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#删除所有未启动的镜像"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">删除所有未启动的镜像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用Dockerfile来创建新的镜像"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">用Dockerfile来创建新的镜像</span></a></li></ol></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Docker容器的入门操作"><span class="post-toc-number">1.</span> <span class="post-toc-text">Docker容器的入门操作</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Docker的安装"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Docker的安装</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Windows安装"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">Windows安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Ubuntu-14-04安装"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">Ubuntu 14.04安装</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Docker基本命令"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">Docker基本命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-pull拉取Docker镜像"><span class="post-toc-number">1.2.1.</span> <span class="post-toc-text">docker pull拉取Docker镜像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-images查看镜像"><span class="post-toc-number">1.2.2.</span> <span class="post-toc-text">docker images查看镜像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-run启动镜像并且创建容器"><span class="post-toc-number">1.2.3.</span> <span class="post-toc-text">docker run启动镜像并且创建容器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-export打包导出容器"><span class="post-toc-number">1.2.4.</span> <span class="post-toc-text">docker export打包导出容器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-import导入容器"><span class="post-toc-number">1.2.5.</span> <span class="post-toc-text">docker import导入容器</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Docker常用方法"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">Docker常用方法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#删除所有未启动的镜像"><span class="post-toc-number">1.3.1.</span> <span class="post-toc-text">删除所有未启动的镜像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#用Dockerfile来创建新的镜像"><span class="post-toc-number">1.3.2.</span> <span class="post-toc-text">用Dockerfile来创建新的镜像</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#docker-exe-对启动的镜像执行指令"><span class="post-toc-number">1.3.3.</span> <span class="post-toc-text">docker exe 对启动的镜像执行指令</span></a></li></ol></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -327,7 +327,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        
+        <a class="post_tag-link" href="/tags/docker/">docker</a>
     </ul>
     
 
@@ -401,7 +401,7 @@
 <h3 id="docker-images查看镜像"><a href="#docker-images查看镜像" class="headerlink" title="docker images查看镜像"></a>docker images查看镜像</h3><p>通过docker images命令我们可以查看我们已经下载的所有镜像</p>
 <h3 id="docker-run启动镜像并且创建容器"><a href="#docker-run启动镜像并且创建容器" class="headerlink" title="docker run启动镜像并且创建容器"></a>docker run启动镜像并且创建容器</h3><p>docker run 命令后面可以跟镜像的名字，或者是镜像的uuid值，uuid可以通过</p>
 <h3 id="docker-export打包导出容器"><a href="#docker-export打包导出容器" class="headerlink" title="docker export打包导出容器"></a>docker export打包导出容器</h3><h3 id="docker-import导入容器"><a href="#docker-import导入容器" class="headerlink" title="docker import导入容器"></a>docker import导入容器</h3><h2 id="Docker常用方法"><a href="#Docker常用方法" class="headerlink" title="Docker常用方法"></a>Docker常用方法</h2><h3 id="删除所有未启动的镜像"><a href="#删除所有未启动的镜像" class="headerlink" title="删除所有未启动的镜像"></a>删除所有未启动的镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo docker rm $(docker ps <span class="_">-a</span> -q)</div></pre></td></tr></table></figure>
-<h3 id="用Dockerfile来创建新的镜像"><a href="#用Dockerfile来创建新的镜像" class="headerlink" title="用Dockerfile来创建新的镜像"></a>用Dockerfile来创建新的镜像</h3>
+<h3 id="用Dockerfile来创建新的镜像"><a href="#用Dockerfile来创建新的镜像" class="headerlink" title="用Dockerfile来创建新的镜像"></a>用Dockerfile来创建新的镜像</h3><h3 id="docker-exe-对启动的镜像执行指令"><a href="#docker-exe-对启动的镜像执行指令" class="headerlink" title="docker exe 对启动的镜像执行指令"></a>docker exe 对启动的镜像执行指令</h3>
     
 
     
@@ -543,7 +543,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">4</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/07/">七月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/06/">六月 2017<span class="sidebar_archives-count">7</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/05/">五月 2017<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">4</span></a>
             </ul>
         </li>
         
