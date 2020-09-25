@@ -561,6 +561,8 @@ eatsyscall.o: eatsyscall.asm
 
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
+<script src="/js/md5.js"></script>
+
 <script>
     var gitalk = new Gitalk({
             clientID: '7ed34101545b7f063d71',
@@ -568,6 +570,7 @@ eatsyscall.o: eatsyscall.asm
             repo: 'benzj.github.io',
             owner: 'benzj',
             admin: ['benzj'],
+            id: md5(location.pathname),
             // facebook-like distraction free mode
             distractionFreeMode: false
         })

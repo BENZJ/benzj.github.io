@@ -558,6 +558,8 @@ import os                                                     #删除中间过�
 
 <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
+<script src="/js/md5.js"></script>
+
 <script>
     var gitalk = new Gitalk({
             clientID: '7ed34101545b7f063d71',
@@ -565,6 +567,7 @@ import os                                                     #删除中间过�
             repo: 'benzj.github.io',
             owner: 'benzj',
             admin: ['benzj'],
+            id: md5(location.pathname),
             // facebook-like distraction free mode
             distractionFreeMode: false
         })
