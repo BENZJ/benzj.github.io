@@ -44,7 +44,7 @@
     
     <title>
         
-            标签: docker | 
+            wireguard docker运行 | 
         
         Benz&#39;s Blog
     </title>
@@ -55,7 +55,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="null">
+    <meta name="keywords" content="null,docker,wireguard">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -82,6 +82,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/github-v2.min.css?AfzKxt++K+/lhZBlSjnxwg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -218,7 +221,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Benz&#39;s Blog">
-    <meta name="msapplication-starturl" content="https://benzj.github.io/tags/docker/">
+    <meta name="msapplication-starturl" content="https://benzj.github.io/2020/10/15/wireguard-docker运行/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="Benz&#39;s Blog">
@@ -233,13 +236,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://benzj.github.io/tags/docker/">
+    <meta property="og:url" content="https://benzj.github.io/2020/10/15/wireguard-docker运行/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: docker | Benz&#39;s Blog">
+    <meta property="og:title" content="wireguard docker运行 | Benz&#39;s Blog">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="docker"> <meta property="og:article:tag" content="wireguard"> 
 
+    
+        <meta property="article:published_time" content="Thu Oct 15 2020 11:59:57 GMT+0800">
+        <meta property="article:modified_time" content="Thu Oct 15 2020 12:27:26 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -247,13 +253,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://benzj.github.io/tags/docker/index.html" />
+        <link rel="canonical" href="https://benzj.github.io/2020/10/15/wireguard-docker运行/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://benzj.github.io/2020/10/15/wireguard-docker运行/index.html",
+    "headline": "wireguard docker运行",
+    "datePublished": "Thu Oct 15 2020 11:59:57 GMT+0800",
+    "dateModified": "Thu Oct 15 2020 12:27:26 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "Benz",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://benz-blog.oss-cn-beijing.aliyuncs.com/my.jpeg"
+        },
+        "description": "Hi, nice to meet you"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Benz&#39;s Blog",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",docker,wireguardnull",
+    "description": "",
+}
+</script>
 
 
     
@@ -304,216 +340,352 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#运行环境"><span class="post-toc-number">1.</span> <span class="post-toc-text">运行环境</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Dockerfile"><span class="post-toc-number">2.</span> <span class="post-toc-text">Dockerfile</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#entrypoint-sh"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">entrypoint.sh</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#install-module"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">install-module</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#使用说明"><span class="post-toc-number">3.</span> <span class="post-toc-text">使用说明</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#初始化（第一次运行）"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">初始化（第一次运行）</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动容器"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">启动容器</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#config文件夹"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">config文件夹</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#user-conf"><span class="post-toc-number">3.3.1.</span> <span class="post-toc-text">user.conf</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#wg0-conf"><span class="post-toc-number">3.3.2.</span> <span class="post-toc-text">wg0.conf</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#过程中出现的问题"><span class="post-toc-number">4.</span> <span class="post-toc-text">过程中出现的问题</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#需要修改系统内核。"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">需要修改系统内核。</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#权限问题"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">权限问题</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#脚本运行时头部注释"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">脚本运行时头部注释</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#参考链接"><span class="post-toc-number">5.</span> <span class="post-toc-text">参考链接</span></a></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://benz-blog.oss-cn-beijing.aliyuncs.com/kubernetes.png">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://benz-blog.oss-cn-beijing.aliyuncs.com/docker-cloud-twitter-card-768x291.png)">
+    
+            <p class="article-headline-p">
+                wireguard docker运行
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="https://benz-blog.oss-cn-beijing.aliyuncs.com/my.jpeg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Benz</strong>
+        <span>10月 15, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
     
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/10/15/腾讯云学生机搭建单节点kubernetes实验机器/">腾讯云学生机搭建单节点kubernetes实验机器</a></p>
-    </div>
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/docker/">docker</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/wireguard/">wireguard</a>
+    </ul>
+    
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            环境腾讯云学生机1...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/10/15/腾讯云学生机搭建单节点kubernetes实验机器/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="https://benz-blog.oss-cn-beijing.aliyuncs.com/my.jpeg" width="44px" height="44px" alt="Benz's avatar">
-            </div>
-            <div>
-                <strong>Benz</strong>
-                <span>10月 15, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/docker/">docker</a>
-              </span>
-            
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
 
-            
+    
 
-            
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=wireguard docker运行&url=https://benzj.github.io/2020/10/15/wireguard-docker运行/index.html&pic=https://benzj.github.io/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=wireguard docker运行&url=https://benzj.github.io/2020/10/15/wireguard-docker运行/index.html&via=Benz" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://benzj.github.io/2020/10/15/wireguard-docker运行/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://benzj.github.io/2020/10/15/wireguard-docker运行/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+    
 </div>
 
-            
-            
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>由于每次在新机器上部署wireguard上面部署都感觉很麻烦，所以想写一个docker来方便部署。（实际发现还不如直接使用apt install方便， 但是在wireguard里面嵌入了一个自己revle写的web UI界面勉强使用一下吧）</p>
+<h1 id="运行环境"><a href="#运行环境" class="headerlink" title="运行环境"></a>运行环境</h1><p>在vultr 的Ubuntu 16.04机器上面是实验成功可用的，CentOS7的腾讯云下不可用</p>
+<h1 id="Dockerfile"><a href="#Dockerfile" class="headerlink" title="Dockerfile"></a>Dockerfile</h1><pre><code class="lang-bash">FROM ubuntu:16.04
+RUN \
+echo &quot;**** install dependencies ****&quot; &amp;&amp; \
+apt-get update &amp;&amp; \
+apt install  -y --no-install-recommends \
+        git \
+        wget \
+        ca-certificates \
+        wireguard \
+        iproute2 \
+        iptables \
+        net-tools  &amp;&amp; \
+echo &quot;net.ipv4.ip_forward=1&quot; &gt;&gt; /etc/sysctl.conf  &amp;&amp;\
+# echo &quot;net.ipv6.conf.all.forwarding=1&quot; &gt;&gt; /etc/sysctl.conf  &amp;&amp;\
+sysctl -p &amp;&amp;\
+echo &quot;**** install golang ****&quot; &amp;&amp; \
+wget https://golang.org/dl/go1.15.2.linux-amd64.tar.gz &amp;&amp;\
+tar -C /usr/local -xzf go1.15.2.linux-amd64.tar.gz &amp;&amp;\
+rm go1.15.2.linux-amd64.tar.gz &amp;&amp; \
+mkdir /root/go
+ENV GOPATH=/root/go 
+ENV PATH=${PATH}:/usr/local/go/bin
+ENV PATH=${PATH}:${GOPATH}/bin 
+ENV PATH=${PATH}:/script
+COPY entrypoint.sh /script/entrypoint.sh
+COPY install-module /script/install-module
+
+RUN \
+chmod +x /script/entrypoint.sh &amp;&amp; \
+chmod +x /script/install-module &amp;&amp; \
+echo &quot;**** install revel ****&quot; &amp;&amp; \
+go get github.com/revel/revel &amp;&amp; \
+go get github.com/revel/cmd/revel &amp;&amp; \
+echo &quot;**** install webconfig ****&quot; &amp;&amp; \
+git clone https://github.com/BENZJ/Web_Wireguard_config &amp;&amp;\
+git clone https://git.zx2c4.com/wireguard-linux-compat
+
+
+
+EXPOSE 51820/udp
+EXPOSE 9000/tcp
+</code></pre>
+<h2 id="entrypoint-sh"><a href="#entrypoint-sh" class="headerlink" title="entrypoint.sh"></a>entrypoint.sh</h2><pre><code class="lang-bash">#!/bin/bash
+wg-quick up wg0
+nohub revel run /Web_Wireguard_config &gt; wgweboutput 2&gt;&amp;1 &amp;
+sleep infinity
+</code></pre>
+<p>分别是启动wireguard，和启动webUI</p>
+<h2 id="install-module"><a href="#install-module" class="headerlink" title="install-module"></a>install-module</h2><pre><code class="lang-bash">#!/bin/bash
+make -C wireguard-linux-compat/src -j$(nproc)
+make -C wireguard-linux-compat/src install
+</code></pre>
+<p>其实就是把wireguard-linux-compat重新安装一遍。</p>
+<h1 id="使用说明"><a href="#使用说明" class="headerlink" title="使用说明"></a>使用说明</h1><h2 id="初始化（第一次运行）"><a href="#初始化（第一次运行）" class="headerlink" title="初始化（第一次运行）"></a>初始化（第一次运行）</h2><pre><code class="lang-bash">docker run          --cap-add=NET_ADMIN \
+                    --cap-add=SYS_MODULE \
+                    --name=wireguardinit \
+                    -v  /usr/src:/usr/src \
+                    -v /lib/modules:/lib/modules \
+                    benzj/wireguard_with_webcontrol install-module
+</code></pre>
+<h2 id="启动容器"><a href="#启动容器" class="headerlink" title="启动容器"></a>启动容器</h2><pre><code class="lang-bash">docker run -it -d --cap-add=NET_ADMIN \
+                    --cap-add=SYS_MODULE \
+                    --name=wireguard \
+                    -p 23333:51820/udp \
+                    -p 9999:9000/tcp \
+                    -v /lib/modules:/lib/modules \
+                    -v $PWD/config:/etc/wireguard \
+                    benzj/wireguard_with_webcontrol entrypoint.sh
+</code></pre>
+<h2 id="config文件夹"><a href="#config文件夹" class="headerlink" title="config文件夹"></a>config文件夹</h2><p>里面包含两个文件user.conf和wg0.conf</p>
+<h3 id="user-conf"><a href="#user-conf" class="headerlink" title="user.conf"></a>user.conf</h3><p>第一行写账号，第二行写密码</p>
+<pre><code class="lang-bash">user
+pass
+</code></pre>
+<h3 id="wg0-conf"><a href="#wg0-conf" class="headerlink" title="wg0.conf"></a>wg0.conf</h3><p>这是一个wireguard的配置文件具体参考官网</p>
+<pre><code class="lang-bash">[Interface]
+Address = 192.168.2.1/24
+SaveConfig = true
+PostUp = iptables -A FORWARD -i wg0 -j ACCEPT; iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -t nat -D POSTROUTING -o eth0 -j MASQUERADE
+ListenPort = 51820  
+PrivateKey = xxxxxxxxxxxxxx                       #这里填入你的私钥
+
+[Peer]
+PublicKey = xxxxxxxxxxxxxxxxxxxx             #这里改成自己的公钥
+AllowedIPs = 192.168.2.2/32 
+Endpoint = xxxxxxxxxxx
+</code></pre>
+<h1 id="过程中出现的问题"><a href="#过程中出现的问题" class="headerlink" title="过程中出现的问题"></a>过程中出现的问题</h1><h2 id="需要修改系统内核。"><a href="#需要修改系统内核。" class="headerlink" title="需要修改系统内核。"></a>需要修改系统内核。</h2><p>由于wireguard需要调运操作系统内核，我们知道docker与操作系统共享内核所以需要调用和修改内核的直接使用docker是无法实现调用的。</p>
+<p>解决办法采用-v挂载上内核目录，然后在容易内执行init脚本修改对应目录的内容。</p>
+<h2 id="权限问题"><a href="#权限问题" class="headerlink" title="权限问题"></a>权限问题</h2><p>容器需要创建虚拟网卡，修改内核使用—cap-add添加权限，或者可以使用-P赋予所有权限</p>
+<pre><code class="lang-bash">--cap-add=NET_ADMIN \
+--cap-add=SYS_MODULE \
+</code></pre>
+<h2 id="脚本运行时头部注释"><a href="#脚本运行时头部注释" class="headerlink" title="脚本运行时头部注释"></a>脚本运行时头部注释</h2><p>对于写好的shell脚本需要加入头部解释执行器的注释不然会报错</p>
+<pre><code class="lang-bash">#!/bin/bash
+</code></pre>
+<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><ul>
+<li><a href="https://hub.docker.com/r/linuxserver/wireguard" target="_blank" rel="external">linuxserver/wireguard</a></li>
+<li><a href="https://github.com/cmulk/wireguard-docker" target="_blank" rel="external">cmulk/wireguard-docker</a></li>
+</ul>
+
         
     
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50 lazy" data-original="https://benz-blog.oss-cn-beijing.aliyuncs.com/docker-cloud-twitter-card-768x291.png">
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2020/10/15/wireguard-docker运行/">wireguard docker运行</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            由于每次在新机器上部署wireguard上面部署都感觉很麻烦，所以想写一个docker来方便部署。（实际发现还不如直接使用apt install方便...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2020/10/15/wireguard-docker运行/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="https://benz-blog.oss-cn-beijing.aliyuncs.com/my.jpeg" width="44px" height="44px" alt="Benz's avatar">
-            </div>
-            <div>
-                <strong>Benz</strong>
-                <span>10月 15, 2020</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/docker/">docker</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
 </div>
 
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/04/30/Docker入门操作/">Docker入门操作</a></p>
-    </div>
+                
 
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/04/30/Docker入门操作/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="https://benz-blog.oss-cn-beijing.aliyuncs.com/my.jpeg" width="44px" height="44px" alt="Benz's avatar">
-            </div>
-            <div>
-                <strong>Benz</strong>
-                <span>4月 30, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/应用/">应用</a>
-              </span>
-            
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 Gitalk -->
+<div id="gitalk-comment">
+    <!-- Gitalk 评论框 -->
+<div id="gitalk-container"></div>
 
-            
+<link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
 
-            
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
+<script src="/js/md5.js"></script>
 
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 5; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
+<script>
+    var gitalk = new Gitalk({
+            clientID: '7ed34101545b7f063d71',
+            clientSecret: '9fc221166d8ea5a6e13769cd03286a18fcc9c375',
+            repo: 'benzj.github.io',
+            owner: 'benzj',
+            admin: ['benzj'],
+            id: md5(location.pathname),
+            // facebook-like distraction free mode
+            distractionFreeMode: false
+        })
+   gitalk.render('gitalk-container')
 </script>
-
-    
 </div>
+<style>
+    #gitalk-comment {
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2020/10/15/revel-webUI/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/06/11/Wireguard组网/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -702,6 +874,14 @@ It will not impact the appearance and can give developers a lot of support :)
                     
 
                     
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
@@ -856,6 +1036,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -868,6 +1052,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
